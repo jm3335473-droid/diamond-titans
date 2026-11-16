@@ -1,55 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diamond Titans</title>
+
 <style>
-body {
-    background:#0f172a;
-    color:white;
-    font-family:Arial,sans-serif;
-    text-align:center;
-    padding:50px;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
-h1 {
-    color:#38bdf8;
+body{
+background:#0f172a;
+color:white;
 }
 
-.box {
-    background:#1e293b;
-    padding:20px;
-    border-radius:10px;
-    max-width:700px;
-    margin:auto;
+header{
+padding:70px 20px;
+text-align:center;
+background:linear-gradient(135deg,#06b6d4,#2563eb);
+}
+
+header h1{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+header p{
+font-size:1.2rem;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 24px;
+background:white;
+color:#2563eb;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+}
+
+section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery div{
+background:#1e293b;
+height:180px;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:1.2rem;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
 }
 </style>
 </head>
 
 <body>
 
-<div class="box">
-    <h1>💎 Diamond Titans 💎</h1>
+<header>
+<h1>💎 Diamond Titans</h1>
+<p>Strength Through Unity</p>
 
-    <h2>Strength Through Unity</h2>
+<a class="btn" href="YOUR_DISCORD_INVITE_LINK">
+Join Our Discord
+</a>
+</header>
 
-    <p>
-        Official Donut SMP Clan
-    </p>
+<section>
+<h2>👑 Leadership</h2>
+<br>
 
-    <p>
-        Join Diamond Titans and become part of one of the strongest clans on Donut SMP.
-    </p>
+<div class="card-container">
 
-    <h3>👑 Leadership</h3>
-    <p>Owner • Co-Owner • Boss</p>
+<div class="card">
+<h3>Owner</h3>
+<p>Leads the clan</p>
+</div>
 
-    <h3>🏗️ Builders</h3>
-    <p>Head Builder • Builders</p>
+<div class="card">
+<h3>Co-Owner</h3>
+<p>Assists with management</p>
+</div>
 
-    <h3>🎁 Giveaways</h3>
-    <p>Regular clan giveaways and rewards.</p>
+<div class="card">
+<h3>Boss</h3>
+<p>Clan leadership</p>
+</div>
 
 </div>
+</section>
+
+<section>
+<h2>🏗️ Building Team</h2>
+<br>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Head Builder</h3>
+<p>Oversees projects</p>
+</div>
+
+<div class="card">
+<h3>Builders</h3>
+<p>Design and construct bases</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>🎁 Giveaways</h2>
+<br>
+
+<div class="card">
+<h3>Free 15M Giveaway</h3>
+<p>Join the Discord to enter.</p>
+</div>
+
+</section>
+
+<section>
+<h2>📸 Clan Gallery</h2>
+<br>
+
+<div class="gallery">
+
+<div>Screenshot 1</div>
+
+<div>Screenshot 2</div>
+
+<div>Screenshot 3</div>
+
+</div>
+
+</section>
+
+<footer>
+💎 Diamond Titans | Donut SMP
+</footer>
 
 </body>
 </html>
